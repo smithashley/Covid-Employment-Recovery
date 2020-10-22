@@ -47,13 +47,13 @@ The market for high income workers has recovered much faster, while low income j
 - High income is defined as more than $60, 000.
 
 Timeline provided for context
-- First case January 20, 2020
+- First case in United States confirmed on January 20, 2020
+- First case in Virgina confirmed on March 7, 2020
 - National emergency declared March 13, 2020
-- VA schools close March 16, 2020
-- Nonessential businesses close March 24, 2020
-- VA stay at home order March 30, 2020
-- CARES Act April 15, 2020
-- Selective reopening by region May 15, 2020
-- Selective business reopened statewide May 29, 2020
-- VA stay at home order ends June 10, 2020
+- Nonessential businesses and schools closed on March 24, 2020
+- CARES Act signed on March 27, 2020
+- Virginia stay at home order March 30, 2020
+- Selective reopening by region on May 15, 2020
+- Selective business reopening statewide on May 29, 2020
+- Virginia stay at home order ended on June 10, 2020
 
