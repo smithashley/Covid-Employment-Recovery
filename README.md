@@ -29,7 +29,7 @@ az storage blob upload --account-name [insert account name here] --container-nam
 2. Define the schema
 3. Read in .csv file
 4. Transform data, filtering down to one state
-5. Write files to SQL DB
+5. Write files to Azure SQL Database
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/dboimage.png)
 
 ## Data Visualization
