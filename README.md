@@ -37,7 +37,7 @@ az storage blob upload --account-name [insert account name here] --container-nam
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/dboimage.png)
 
 ## Data Visualization
-The market for high income workers has recovered much faster, while low income job growth appears to have stalled.  
+The job market for high income workers has recovered much faster, while low income job growth appears to have stalled.  
 - Low income is defined as less than $27,000.
 - Middle income is defined as $27,000 to $60,000.
 - High income is defined as more than $60, 000.
