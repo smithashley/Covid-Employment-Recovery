@@ -1,1 +1,52 @@
 # CovidEmploymentRecovery
+
+This project explores the economic recovery of different wage groups in Virginia with the use of Azure Blob Storage, Azure Databricks, Azure SQL Database, and Tableau.
+
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/azurediagram.png)
+
+The dataset was provided by Opportunity Insights and it lists daily employment changes for each state. https://tracktherecovery.org/ 
+
+## Steps to load data to Azure Blob Storage
+
+1. Create resource group
+
+az group create --location "eastus2" --name newproject
+
+2. Create a storage account
+
+az storage account create --name covidblob1020 --resource-group newproject 
+
+3. Create a container
+
+az storage container create --account-name covidblob1020 --name covidproject
+
+4. Upload a blob
+
+az storage blob upload --account-name covidblob1020 --container-name covidproject --file '/Users/ashleysmith/Downloads/EconomicTracker-main/data/Employment Combined - State - Daily.csv' --name employmentcombined
+
+## Steps for ETL
+1. Connect blob to Azure Databricks
+2. Define the schema
+3. Read in .csv file
+4. Transform data
+5. Export to SQL DB
+
+
+## Data Visualization
+
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newplot.png)
+This chart shows the effect that Covid-19 has had on job growth for Virginians at different salary levels.
+The market for high income workers has recovered much faster, while low income job growth appears to have stalled.  
+[Link to interactive chart](https://public.tableau.com/views/Project1_16033597504640/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
+
+Timeline provided for context
+-First case January 20, 2020
+-National emergency declared March 13, 2020
+-VA schools close March 16, 2020
+-Nonessential businesses close March 24, 2020
+-VA stay at home order March 30, 2020
+-CARES Act April 15, 2020
+-Selective reopening by region May 15, 2020
+-Selective business reopened statewide May 29, 2020
+-VA stay at home order ends June 10, 2020
+
