@@ -39,11 +39,12 @@ az storage blob upload --account-name [insert account name here] --container-nam
 ## Data Visualization
 
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newplot.png)
+[Link to interactive chart](https://public.tableau.com/views/Project1_16033597504640/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
+
 The market for high income workers has recovered much faster, while low income job growth appears to have stalled.  
 - Low income is defined as less than $27,000.
 - Middle income is defined as $27,000 to $60,000.
 - High income is defined as more than $60, 000.
-[Link to interactive chart](https://public.tableau.com/views/Project1_16033597504640/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
 
 Timeline provided for context
 - First case January 20, 2020
