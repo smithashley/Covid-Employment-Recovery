@@ -49,7 +49,7 @@ Timeline provided for context
 - First case in United States confirmed on January 20, 2020
 - First case in Virgina confirmed on March 7, 2020
 - National emergency declared March 13, 2020
-- Nonessential businesses and schools closed on March 24, 2020
+- Nonessential businesses and schools closed in Virginia on March 24, 2020
 - CARES Act signed on March 27, 2020
 - Virginia stay at home order March 30, 2020
 - Selective reopening by region on May 15, 2020
