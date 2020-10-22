@@ -1,8 +1,8 @@
-# CovidEmploymentRecovery
+# Covid Employment Recovery
 
 This project explores the economic recovery of different wage groups in Virginia with the use of Azure Blob Storage, Azure Databricks, Azure SQL Database, and Tableau.
 
-![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/azurediagram.png)
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newazurediag.png)
 
 The dataset was provided by Opportunity Insights and it lists daily employment changes for each state. https://tracktherecovery.org/ 
 
@@ -24,13 +24,13 @@ az storage container create --account-name [insert account name here] --name [in
 
 az storage blob upload --account-name [insert account name here] --container-name [insert container name here] --file '[insert file path here]' --name [insert file name here]
 
-## Steps for ETL
+## Steps for ETL in Databricks
 1. Connect blob to Azure Databricks
 2. Define the schema
 3. Read in .csv file
 4. Transform data, filtering down to one state
-5. Export to SQL DB
-
+5. Write files to SQL DB
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/dboimage.png)
 
 ## Data Visualization
 
