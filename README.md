@@ -1,12 +1,12 @@
 # Covid-19 Employment Recovery
 
-This project explores the effect Covid-19 has had on job growth for Virginians at different income levels with the use of Azure Blob Storage, Azure Databricks, Azure SQL Database, and Tableau.
+This project explores the effect Covid-19 has had on job growth for Virginians at different income levels with the use of Azure Data Factory, Azure Data Lake Storage, Azure Databricks, Azure Synapse Analytics, and Tableau.
 
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newazurediag.png)
 
 The dataset was provided by Opportunity Insights and it lists daily employment changes for each state. https://tracktherecovery.org/ 
 
-## Steps to load data to Azure Blob Storage
+## Steps to load data to Azure Data Lake Storage
 
 1. Log-in to Azure in the command line interface
 
@@ -16,25 +16,30 @@ az login
 
 az group create --location "eastus2" --name [insert resource group here]
 
-3. Create a storage account
+3. Create the data lake account
 
-az storage account create --name [insert account name here] --resource-group [insert resource group here] 
+az dls fs create --account [insert account name here] --resource-group [insert resource group here] 
 
-4. Create a container
+4. Create folder
 
-az storage container create --account-name [insert account name here] --name [insert container name here]
+az dls fs create --account [insert account name here] --folder --path /[insert folder name here]
 
-5. Upload a blob
+5. Upload data to data lake account
 
-az storage blob upload --account-name [insert account name here] --container-name [insert container name here] --file '[insert file path here]' --name [insert file name here]
+az dls fs upload --account-name [insert account name here] --source-path "[insert file path here]" --destination-path "[insert file name here]"
+
+## Data Factory 
+1. Copy from Azure Data Lake Storage
+2. Extract, Transform, and Load (ETL) with Azure Databricks
 
 ## Steps for ETL in Databricks
-1. Connect blob to Azure Databricks
-2. Define the schema
-3. Read in .csv file
-4. Transform data (clean up columns and data types) then filter down to Virginia
-5. Write the 4 Dataframes that were created to Azure SQL Database
-![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/dboimage.png)
+1. Define the schema
+2. Read in .csv file from Azure Data Lake Storage
+3. Transform data (clean up columns and data types) 
+4. Write the 3 Dataframes that were created to Azure Synapse Analytics
+
+## Query data and filter down to Virginia
+![]()
 
 ## Data Visualization
 The job market for high income workers has recovered while low income job growth has taken a much bigger hit from the effects of the pandemic.  
@@ -55,4 +60,3 @@ Timeline provided for context
 - Selective reopening by region on May 15, 2020
 - Selective business reopening statewide on May 29, 2020
 - Virginia stay at home order ended on June 10, 2020
-
