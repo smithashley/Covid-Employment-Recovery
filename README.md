@@ -1,6 +1,6 @@
 # Covid-19 Employment Recovery
 
-This project explores the effect Covid-19 has had on job growth for Virginians at different income levels with the use of Azure Data Factory, Azure Data Lake Storage, Azure Databricks, Azure Synapse Analytics, and Tableau.
+This project explores the effect Covid-19 has had on job growth for Virginians at different income levels with the use of Azure Data Lake Storage, Azure Databricks, Azure Synapse Analytics, and Tableau.
 
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/azurec_diag.png)
 
