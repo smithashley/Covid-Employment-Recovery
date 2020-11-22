@@ -44,7 +44,7 @@ The job market for high income workers has recovered while low income job growth
 - High income is defined as more than $60,000.
 
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newplot.png)
-[Link to interactive chart](https://public.tableau.com/views/Project1_16033597504640/Sheet22?:language=en&:display_count=y&:origin=viz_share_link)
+[Link to Tableau dashboard](https://public.tableau.com/views/Project1_16033597504640/Sheet22?:language=en&:display_count=y&:origin=viz_share_link)
 
 Timeline provided for context
 - First case in United States confirmed on January 20, 2020
