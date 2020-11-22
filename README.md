@@ -35,7 +35,7 @@ az dls fs upload --account-name [insert account name here] --source-path "[inser
 4. Write the 3 Dataframes that were created to Azure Synapse Analytics
 
 ## Query data and filter down to Virginia
-![]()
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/VAquery.png)
 
 ## Data Visualization
 The job market for high income workers has recovered while low income job growth has taken a much bigger hit from the effects of the pandemic.  
