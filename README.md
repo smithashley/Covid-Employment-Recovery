@@ -32,7 +32,7 @@ az dls fs upload --account-name [insert account name here] --source-path "[inser
 1. Define the schema
 2. Read in .csv file from Azure Data Lake Storage
 3. Transform data (clean up columns and data types) 
-4. Write the 3 Dataframes that were created to Azure Synapse Analytics
+4. Write the dataframes that were created to Azure Synapse Analytics
 
 ## Query data and filter down to Virginia
 ![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/VAquery.png)
