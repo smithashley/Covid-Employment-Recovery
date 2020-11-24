@@ -164,7 +164,7 @@ val dimstateDF = rdd.toDF("state", "stateCode", "stateFips")
 // COMMAND ----------
 
 spark.sql("set spark.sql.legacy.timeParserPolicy=LEGACY")
-spark.conf.set("fs.azure.account.key.dwpool.blob.core.windows.net", "/VHS4BskHOFMEsaNqkvxpcrojhkEMK5tv2xLaoeBiP9b6TjhtfyGoL1CfQl59Q6u2aL9Gpps5HYEfECKcIS2Yg==")
+spark.conf.set("fs.azure.account.key.dwpool.blob.core.windows.net", "storage_account_access_key")
 
 // COMMAND ----------
 
