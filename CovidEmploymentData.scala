@@ -171,7 +171,7 @@ spark.conf.set("fs.azure.account.key.dwpool.blob.core.windows.net", "storage_acc
 //Write dataframes to SQL pool
 nationalDF.write
   .format("com.databricks.spark.sqldw")
-  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
+  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password_redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
   .option("forwardSparkAzureStorageCredentials", "true")
   .option("dbTable", "National")
   .option("tempDir", "wasbs://coviderdw@dwpool.blob.core.windows.net/tempDirs")
@@ -181,7 +181,7 @@ nationalDF.write
 
 sectorDF.write
   .format("com.databricks.spark.sqldw")
-  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
+  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password_redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
   .option("forwardSparkAzureStorageCredentials", "true")
   .option("dbTable", "Sector")
   .option("tempDir", "wasbs://coviderdw@dwpool.blob.core.windows.net/tempDirs")
@@ -191,7 +191,7 @@ sectorDF.write
 
 dimdateDF.write
   .format("com.databricks.spark.sqldw")
-  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
+  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password_redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
   .option("forwardSparkAzureStorageCredentials", "true")
   .option("dbTable", "Date")
   .option("tempDir", "wasbs://coviderdw@dwpool.blob.core.windows.net/tempDirs")
@@ -201,7 +201,7 @@ dimdateDF.write
 
 dimstateDF.write
   .format("com.databricks.spark.sqldw")
-  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
+  .option("url", "jdbc:sqlserver://afssqldw.database.windows.net:1433;database=afssqldw2;user=afsmithcodes@afssqldw;password={password_redacted};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;")
   .option("forwardSparkAzureStorageCredentials", "true")
   .option("dbTable", "State")
   .option("tempDir", "wasbs://coviderdw@dwpool.blob.core.windows.net/tempDirs")
