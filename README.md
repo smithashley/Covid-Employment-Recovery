@@ -8,23 +8,23 @@ The dataset was provided by Opportunity Insights and it lists daily employment c
 
 ## Steps to load data to Azure Data Lake Storage
 
-1. Log-in to Azure in the command line interface
+- Log-in to Azure in the command line interface
 
 az login
 
-2. Create resource group
+- Create resource group
 
 az group create --location "eastus2" --name [insert resource group here]
 
-3. Create the data lake account
+- Create the data lake account
 
 az dls fs create --account [insert account name here] --resource-group [insert resource group here] 
 
-4. Create folder
+- Create folder
 
 az dls fs create --account [insert account name here] --folder --path /[insert folder name here]
 
-5. Upload data to data lake account
+- Upload data to data lake account
 
 az dls fs upload --account-name [insert account name here] --source-path "[insert file path here]" --destination-path "[insert file name here]"
 
