@@ -32,10 +32,10 @@ az dls fs upload --account-name [insert account name here] --source-path "[inser
 1. Define the schema
 2. Read in .csv file from Azure Data Lake Storage using credential passthrough
 3. Transform data 
-  - Dropped unneeded columns
-  - Merged columns and fixed data types for datetime
-  - Renamed columns
-  - Performed mathematical and windowing funtions
+- Dropped unneeded columns
+- Merged columns and fixed data types for datetime
+- Renamed columns
+- Performed mathematical and windowing funtions
 4. Configure connection to Azure Synapse Analytics
 5. Write the data to Azure Synapse Analytics
 
