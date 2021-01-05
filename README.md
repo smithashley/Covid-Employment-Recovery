@@ -31,7 +31,7 @@ az dls fs upload --account-name [insert account name here] --source-path "[inser
 ## Steps for ETL in Databricks
 1. Define the schema
 2. Read in .csv file from Azure Data Lake Storage using credential passthrough
-3. Transform data (renaming columns, merging columns and fixing data types, performed mathematical and windowing funtions on columns, and dropping columns) 
+3. Transform data (dropped columns, renamed columns, merged columns and fixed data types, performed mathematical and windowing funtions on columns)
 4. Configure connection to Azure Synapse Analytics
 5. Write the data to Azure Synapse Analytics
 
