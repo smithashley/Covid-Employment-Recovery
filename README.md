@@ -48,7 +48,7 @@ The job market for high income workers has recovered while low income job growth
 - Middle income is defined as $27,000 to $60,000.
 - High income is defined as more than $60,000.
 
-![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/newplot.png)
+![](https://github.com/smithashley/Covid-Employment-Recovery/blob/main/images/tableau_screenshot.png)
 [Link to Tableau dashboard](https://public.tableau.com/views/Project1_16033597504640/Sheet22?:language=en&:display_count=y&:origin=viz_share_link)
 
 Timeline provided for context
